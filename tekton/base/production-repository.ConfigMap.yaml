@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: production-repository
+data:
+  branch: main
+  host: github.com
+  org: chrisley75
+  protocol: https
+  repo: tekton-save-configuration
+

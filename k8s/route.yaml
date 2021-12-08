@@ -1,0 +1,10 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: pacman-app
+spec:
+  to:
+    name: pacman-app
+    kind: Service
+    weight: 100
+  wildcardPolicy: None
