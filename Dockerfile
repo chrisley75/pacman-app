@@ -1,5 +1,5 @@
-#FROM node:boron
-FROM alpine:latest
+FROM node:boron
+#FROM alpine:latest
 
 # Create app directory
 RUN mkdir -p /app
