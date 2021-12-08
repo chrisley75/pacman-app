@@ -1,11 +1,12 @@
-FROM node:boron
+#FROM node:boron
+FROM alpine:latest
 
 # Create app directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+RUN mkdir -p /app
+WORKDIR /app
 
 # Clone game source code
-RUN git clone https://github.com/chrisley75/pacman.git .
+RUN git clone https://github.com/chrisley75/pacman-app.git .
 
 # Install app dependencies
 RUN npm install
